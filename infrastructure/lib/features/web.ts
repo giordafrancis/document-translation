@@ -50,6 +50,11 @@ export class dt_web extends Construct {
 			responseHttpStatus: 200,
 			responsePagePath: "/",
 		};
+		const responseHeadersPolicy = new cloudfront.ResponseHeadersPolicy(this, 'SecurityHeadersPolicy', {
+		securityHeadersBehavior: {
+			frameOptions: { frameOption: cloudfront.HeadersFrameOption.DENY, override: true },
+		},
+		});
 		if (props.webUiCustomDomain && props.webUiCustomDomainCertificate) {
 			const certificate = acm.Certificate.fromCertificateArn(
 				this,
@@ -67,6 +72,7 @@ export class dt_web extends Construct {
 						allowedMethods: cloudfront.AllowedMethods.ALLOW_GET_HEAD,
 						viewerProtocolPolicy:
 							cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
+							 responseHeadersPolicy: responseHeadersPolicy,  // <- ADD THIS
 					},
 					defaultRootObject: "index.html",
 					enableLogging: true, // ASM-CFR3
@@ -88,6 +94,7 @@ export class dt_web extends Construct {
 						allowedMethods: cloudfront.AllowedMethods.ALLOW_GET_HEAD,
 						viewerProtocolPolicy:
 							cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
+							responseHeadersPolicy: responseHeadersPolicy, // <- ADD THIS
 					},
 					defaultRootObject: "index.html",
 					enableLogging: true, // ASM-CFR3

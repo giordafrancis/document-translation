@@ -1,0 +1,9 @@
+[
+	{
+		"order": "1",
+		"title": "Understanding Our Translation Costs",
+		"description": "To provide you with fast and accurate translations, we utilise Amazon Translate. This service operates on a pay-as-you-use basis, where the cost is determined by the total number of text characters translated, including spaces and punctuation.For standard document translations, the rate is set at $15.00 per million characters. This ensures that you only pay for the amount of text you need to translate. To help you plan your translation needs, you can estimate the potential cost of your batch document translations before you proceed. For a detailed calculation, please use the AWS Pricing Calculator, which can be found at the following link",
+		"link": "https://calculator.aws/#/createCalculator/Translate/"
+	}
+]
+
