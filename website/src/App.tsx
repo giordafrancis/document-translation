@@ -3,7 +3,7 @@
 import React from "react";
 import { Suspense } from "react";
 
-import { AppLayout } from "@cloudscape-design/components";
+import { AppLayout, Flashbar } from "@cloudscape-design/components";
 
 import { useFederatedSignIn } from "./hooks/useFederatedSignIn";
 
@@ -26,6 +26,7 @@ export default function App() {
 				<AppLayout
 					navigation={<SideNavigation />}
 					toolsHide
+					notifications={<Flashbar items={[{ type: "warning", content: "This is a note" }]} />}
 					content={<AppRoutes />}
 				></AppLayout>
 				<Footer />
