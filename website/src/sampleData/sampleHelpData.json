@@ -1,8 +1,14 @@
 [
 	{
-		"order": "1",
+		"order": "2",
 		"title": "What is Amazon Translate?",
 		"description": "Amazon Translate is a neural machine translation service that delivers fast, high-quality, affordable, and customizable language translation.",
 		"link": "https://aws.amazon.com/translate/"
+	},
+	{
+		"order": "1",
+		"title": "User Guide — Digital Translation Service",
+		"description": "This service allows approved Users to upload documents for translation across up to 75 languages. Translation quality varies by language — widely used Latin-based languages such as English, French, and Spanish tend to produce more accurate results, while languages such as Arabic, Urdu, and Somali may require additional review by a bilingual colleague or native speaker. This tool must NOT be used for medication instructions, health and safety guidance, legal documents, or complex documents that cannot be simplified. A mandatory disclaimer must be added to all translated documents before distribution. A cost centre code is required for cross-charging. For more information, please consult the full guide.",
+		"link": "https://lambeth.sharepoint.com/:b:/s/365Productivity/IQBPbym7nyAmRKuoMFCgRugRAZmhAknt8DwnEkuhUeSDrJ0?e=3HQ4yW"
 	}
 ]
