@@ -26,7 +26,7 @@ export default function App() {
 				<AppLayout
 					navigation={<SideNavigation />}
 					toolsHide
-					notifications={<Flashbar items={[{ type: "warning", content: "This is a note" }]} />}
+					notifications={<Flashbar items={[{ type: "warning", content: "Please ensure that you have approval from your budget holder before using this app for translation jobs that incur a cost. Your cost code must be correctly set in the app prior to submitting any translation job request. If your cost code has changed, it is your responsibility to notify the application admin at FGiordano-Silva@lambeth.gov.uk." }]} />}
 					content={<AppRoutes />}
 				></AppLayout>
 				<Footer />
