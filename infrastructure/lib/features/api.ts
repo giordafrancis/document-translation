@@ -263,6 +263,7 @@ export class dt_api extends Construct {
 				role: apiLoggingRole,
 			},
 			xrayEnabled: true, // ASM-SF2
+			introspectionConfig: appsync.IntrospectionConfig.DISABLED, // APP-003
 		});
 		const policyPermitLoggingForApi = new iam.Policy(
 			this,
