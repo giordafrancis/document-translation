@@ -15,7 +15,7 @@ export async function getPresignedUrl(props: Props) {
 		const result = await getUrl({
 			path: props.path,
 			options: {
-				expiresIn: 60,
+				expiresIn: 30,
 			},
 		});
 		return result.url.href;
